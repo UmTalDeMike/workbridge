@@ -1,94 +1,112 @@
-<!-- certification.html - Content for the Certification & Development Page -->
-<h2>Sistema de Certificação e Desenvolvimento</h2>
+<!-- certification.html - Content for the Certification & Development Page (Updated Identity) -->
+<h2 style="display: none;">Sistema de Certificação e Desenvolvimento</h2> <!-- Title is now in header -->
 
 <div class="grid-container grid-cols-2">
     <!-- My Certifications Section -->
     <div>
         <h3>Minhas Certificações</h3>
-        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: 15px;">
-            <span class="material-icons" style="font-size: 3em; color: var(--gold-badge); margin-right: 20px; flex-shrink: 0;">verified</span>
+        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+            <span class="material-icons" style="font-size: 3.5em; color: var(--success-green); margin-right: var(--space-lg); flex-shrink: 0;">verified</span>
             <div class="certification-info" style="flex-grow: 1;">
-                <h4 style="margin: 0 0 3px 0; font-size: 1.1em; font-weight: 500;">Comunicação Digital Eficaz</h4>
-                <p style="margin: 0 0 5px 0; font-size: 0.9em; color: var(--text-secondary-gray);">Nível: Intermediário</p>
-                <span class="certification-status" style="font-size: 0.85em; font-weight: 500; color: var(--secondary-teal);">Concluído em 15/04/2025</span>
+                <h4 style="margin: 0 0 var(--space-xs) 0;" class="font-semibold">Comunicação Digital Eficaz</h4>
+                <p style="margin: 0 0 var(--space-sm) 0;" class="text-sm text-secondary">Nível: Intermediário</p>
+                <span class="certification-status text-sm font-semibold" style="color: var(--success-green);">Concluído em 15/04/2025</span>
             </div>
-            <button class="button button-outline" style="margin-left: 15px;">Ver Badge</button>
+            <button class="button button-secondary" style="margin-left: var(--space-md);">
+                <span class="material-icons">badge</span>
+                Ver Badge
+            </button>
         </div>
 
-        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: 15px;">
-            <span class="material-icons" style="font-size: 3em; color: var(--accent-orange); margin-right: 20px; flex-shrink: 0;">hourglass_top</span>
+        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: var(--space-md);">
+            <span class="material-icons" style="font-size: 3.5em; color: var(--warning-yellow); margin-right: var(--space-lg); flex-shrink: 0;">hourglass_top</span>
             <div class="certification-info" style="flex-grow: 1;">
-                <h4 style="margin: 0 0 3px 0; font-size: 1.1em; font-weight: 500;">Produtividade Remota Master</h4>
-                <p style="margin: 0 0 5px 0; font-size: 0.9em; color: var(--text-secondary-gray);">Nível: Avançado</p>
-                <span class="certification-status" style="font-size: 0.85em; font-weight: 500; color: var(--accent-orange);">Em Progresso (75%)</span>
-                 <!-- Basic Progress Bar -->
-                 <div style="background-color: var(--bg-light-gray); border-radius: 5px; height: 8px; margin-top: 8px; overflow: hidden;">
-                     <div style="width: 75%; height: 100%; background-color: var(--accent-orange); border-radius: 5px;"></div>
+                <h4 style="margin: 0 0 var(--space-xs) 0;" class="font-semibold">Produtividade Remota Master</h4>
+                <p style="margin: 0 0 var(--space-sm) 0;" class="text-sm text-secondary">Nível: Avançado</p>
+                <span class="certification-status text-sm font-semibold" style="color: var(--warning-yellow);">Em Progresso (75%)</span>
+                 <!-- Progress Bar -->
+                 <div style="background-color: var(--neutral-gray-border); border-radius: 5px; height: 8px; margin-top: var(--space-sm); overflow: hidden;">
+                     <div style="width: 75%; height: 100%; background-color: var(--warning-yellow); border-radius: 5px;"></div>
                  </div>
             </div>
-            <button class="button button-primary" style="margin-left: 15px;">Continuar</button>
+            <button class="button button-primary" style="margin-left: var(--space-md);">
+                <span class="material-icons">play_circle_outline</span>
+                Continuar
+            </button>
         </div>
 
-        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: 15px; opacity: 0.7;">
-            <span class="material-icons" style="font-size: 3em; color: var(--border-gray); margin-right: 20px; flex-shrink: 0;">lock</span>
+        <div class="card certification-card" style="display: flex; align-items: center; margin-bottom: var(--space-md); opacity: 0.6;">
+            <span class="material-icons" style="font-size: 3.5em; color: var(--neutral-gray-text-secondary); margin-right: var(--space-lg); flex-shrink: 0;">lock</span>
             <div class="certification-info" style="flex-grow: 1;">
-                <h4 style="margin: 0 0 3px 0; font-size: 1.1em; font-weight: 500;">Liderança de Equipes Híbridas</h4>
-                <p style="margin: 0 0 5px 0; font-size: 0.9em; color: var(--text-secondary-gray);">Nível: Especialista</p>
-                <span class="certification-status" style="font-size: 0.85em; font-weight: 500; color: var(--text-secondary-gray);">Bloqueado</span>
+                <h4 style="margin: 0 0 var(--space-xs) 0;" class="font-semibold">Liderança de Equipes Híbridas</h4>
+                <p style="margin: 0 0 var(--space-sm) 0;" class="text-sm text-secondary">Nível: Especialista</p>
+                <span class="certification-status text-sm font-semibold" style="color: var(--neutral-gray-text-secondary);">Bloqueado</span>
             </div>
-            <button class="button button-outline" style="margin-left: 15px;" disabled>Ver Requisitos</button>
+            <button class="button button-secondary" style="margin-left: var(--space-md);" disabled>
+                <span class="material-icons">lock_open</span>
+                Ver Requisitos
+            </button>
         </div>
         <!-- Add more certification cards -->
-        <a href="#" class="button button-outline" style="display: block; text-align: center; margin-top: 10px;">Ver Todas as Certificações</a>
+        <a href="#" class="button button-secondary" style="display: block; text-align: center; margin-top: var(--space-md);">
+            <span class="material-icons">collections_bookmark</span>
+            Ver Todas as Certificações
+        </a>
     </div>
 
     <!-- Development Plan & Badges Section -->
     <div>
         <h3>Meu Plano de Desenvolvimento</h3>
-        <div class="card dev-plan-card" style="background-color: var(--bg-light-gray); margin-bottom: 30px;">
-            <h4 style="margin-top: 0; margin-bottom: 15px; font-size: 1.1em; font-weight: 500; color: var(--text-primary-black);">Próximos Passos Sugeridos</h4>
-            <div style="display: flex; align-items: center; margin-bottom: 12px; font-size: 0.95em;">
-                <span class="material-icons" style="margin-right: 10px; color: var(--secondary-teal);">task_alt</span>
+        <div class="card dev-plan-card" style="background-color: var(--neutral-gray-bg); margin-bottom: var(--space-xl);">
+            <h4 style="margin-top: 0; margin-bottom: var(--space-md);">Próximos Passos Sugeridos</h4>
+            <div style="display: flex; align-items: center; margin-bottom: var(--space-md); font-size: 1em;">
+                <span class="material-icons" style="margin-right: var(--space-sm); color: var(--success-green);">task_alt</span>
                 Completar Simulação: Gestão de Conflitos Assíncrona
             </div>
-            <div style="display: flex; align-items: center; margin-bottom: 12px; font-size: 0.95em;">
-                <span class="material-icons" style="margin-right: 10px; color: var(--secondary-teal);">groups</span>
+            <div style="display: flex; align-items: center; margin-bottom: var(--space-md); font-size: 1em;">
+                <span class="material-icons" style="margin-right: var(--space-sm); color: var(--success-green);">groups</span>
                 Participar de Sessão de Mentoria sobre Feedback
             </div>
-            <div style="display: flex; align-items: center; font-size: 0.95em;">
-                <span class="material-icons" style="margin-right: 10px; color: var(--secondary-teal);">article</span>
+            <div style="display: flex; align-items: center; font-size: 1em; margin-bottom: var(--space-lg);">
+                <span class="material-icons" style="margin-right: var(--space-sm); color: var(--success-green);">article</span>
                 Ler Artigo: Melhores Práticas para Reuniões Virtuais
             </div>
             <!-- Add more plan items -->
-            <a href="#" class="button button-primary" style="margin-top: 20px;">Ver Plano Completo</a>
+            <a href="#" class="button button-primary">
+                <span class="material-icons">list_alt</span>
+                Ver Plano Completo
+            </a>
         </div>
 
         <h3>Meus Badges</h3>
         <div class="card">
             <div class="grid-container grid-cols-4" style="text-align: center;">
                 <div class="badge-item">
-                    <span class="material-icons" style="font-size: 3.5em; color: var(--gold-badge); margin-bottom: 5px;">military_tech</span>
-                    <span style="font-size: 0.85em; color: var(--text-secondary-gray);">Comunicação Digital</span>
+                    <span class="material-icons" style="font-size: 3.5em; color: #E6B422; /* Gold color from guide */ margin-bottom: var(--space-xs);">military_tech</span>
+                    <span class="text-sm text-secondary" style="display: block;">Comunicação Digital</span>
                 </div>
                 <div class="badge-item">
-                    <span class="material-icons" style="font-size: 3.5em; color: var(--gold-badge); margin-bottom: 5px;">emoji_events</span>
-                    <span style="font-size: 0.85em; color: var(--text-secondary-gray);">Mentor Iniciante</span>
+                    <span class="material-icons" style="font-size: 3.5em; color: #E6B422; margin-bottom: var(--space-xs);">emoji_events</span>
+                    <span class="text-sm text-secondary" style="display: block;">Mentor Iniciante</span>
                 </div>
                 <div class="badge-item">
-                    <span class="material-icons" style="font-size: 3.5em; color: var(--gold-badge); margin-bottom: 5px;">star</span>
-                    <span style="font-size: 0.85em; color: var(--text-secondary-gray);">Participante Ativo</span>
+                    <span class="material-icons" style="font-size: 3.5em; color: #E6B422; margin-bottom: var(--space-xs);">star</span>
+                    <span class="text-sm text-secondary" style="display: block;">Participante Ativo</span>
                 </div>
                  <div class="badge-item" style="opacity: 0.5;">
-                    <span class="material-icons" style="font-size: 3.5em; color: var(--border-gray); margin-bottom: 5px;">workspace_premium</span>
-                    <span style="font-size: 0.85em; color: var(--text-secondary-gray);">Produtividade Master</span>
+                    <span class="material-icons" style="font-size: 3.5em; color: var(--neutral-gray-border); margin-bottom: var(--space-xs);">workspace_premium</span>
+                    <span class="text-sm text-secondary" style="display: block;">Produtividade Master</span>
                 </div>
                  <div class="badge-item" style="opacity: 0.5;">
-                    <span class="material-icons" style="font-size: 3.5em; color: var(--border-gray); margin-bottom: 5px;">school</span>
-                    <span style="font-size: 0.85em; color: var(--text-secondary-gray);">Especialista em Shadowing</span>
+                    <span class="material-icons" style="font-size: 3.5em; color: var(--neutral-gray-border); margin-bottom: var(--space-xs);">school</span>
+                    <span class="text-sm text-secondary" style="display: block;">Especialista em Shadowing</span>
                 </div>
                 <!-- Add more badges -->
             </div>
-             <a href="#" class="button button-outline" style="display: block; text-align: center; margin-top: 20px;">Ver Todos os Badges</a>
+             <a href="#" class="button button-secondary" style="display: block; text-align: center; margin-top: var(--space-lg);">
+                 <span class="material-icons">badge</span>
+                 Ver Todos os Badges
+             </a>
         </div>
     </div>
 </div>

@@ -1,32 +1,32 @@
-<!-- profile.html - Content for the User Profile Page -->
-<h2>Meu Perfil</h2>
+<!-- profile.html - Content for the User Profile Page (Updated Identity) -->
+<h2 style="display: none;">Meu Perfil</h2> <!-- Title is now in header -->
 
-<div class="card profile-summary" style="display: flex; align-items: center; margin-bottom: 30px; background-color: var(--bg-light-gray);">
-    <div class="profile-avatar-large" style="width: 100px; height: 100px; border-radius: 50%; background-color: var(--primary-blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 2.5em; font-weight: 500; margin-right: 25px; border: 4px solid var(--secondary-teal); flex-shrink: 0;">LM</div>
+<div class="card profile-summary" style="display: flex; align-items: center; margin-bottom: var(--space-xl); background-color: var(--white);">
+    <div class="profile-avatar-large" style="width: 100px; height: 100px; border-radius: 50%; background-color: var(--primary-indigo); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 2.5em; font-weight: 500; margin-right: var(--space-lg); border: 4px solid var(--complementary-purple); flex-shrink: 0;">LM</div>
     <div class="profile-info" style="flex-grow: 1;">
-        <h3 style="margin: 0 0 5px 0; font-size: 1.6em; font-weight: 500;">Lucas Martins</h3>
-        <p style="margin: 0 0 10px 0; font-size: 1em; color: var(--text-secondary-gray);">Estudante de Ciência da Computação</p>
-        <p style="margin: 0; font-size: 0.9em;">Entrou em: 10 de Janeiro de 2025</p>
+        <h3 style="margin: 0 0 var(--space-xs) 0; font-size: 1.8em;" class="font-bold">Lucas Martins</h3>
+        <p style="margin: 0 0 var(--space-sm) 0; font-size: 1.1em;" class="text-secondary">Estudante de Ciência da Computação</p>
+        <p style="margin: 0;" class="text-sm text-secondary">Entrou em: 10 de Janeiro de 2025</p>
         <!-- Add more summary info like location, headline etc. if available -->
     </div>
     <button class="button button-primary">
-        <span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 5px;">edit</span>
+        <span class="material-icons">edit</span>
         Editar Perfil
     </button>
 </div>
 
-<div class="grid-container grid-cols-3" style="margin-bottom: 30px; text-align: center;">
-    <div class="card stat-card">
-        <span class="stat-value" style="font-size: 2em; font-weight: 500; color: var(--primary-blue); display: block;">8</span>
-        <span class="stat-label" style="font-size: 0.9em; color: var(--text-secondary-gray);">Simulações Concluídas</span>
+<div class="grid-container grid-cols-3 mb-xl" style="text-align: center;">
+    <div class="card stat-card p-lg">
+        <span class="stat-value" style="font-size: 2.2em; font-weight: 600; color: var(--primary-indigo); display: block;">8</span>
+        <span class="stat-label text-sm text-secondary">Simulações Concluídas</span>
     </div>
-    <div class="card stat-card">
-        <span class="stat-value" style="font-size: 2em; font-weight: 500; color: var(--primary-blue); display: block;">12h</span>
-        <span class="stat-label" style="font-size: 0.9em; color: var(--text-secondary-gray);">Mentoria Recebida</span>
+    <div class="card stat-card p-lg">
+        <span class="stat-value" style="font-size: 2.2em; font-weight: 600; color: var(--primary-indigo); display: block;">12h</span>
+        <span class="stat-label text-sm text-secondary">Mentoria Recebida</span>
     </div>
-    <div class="card stat-card">
-        <span class="stat-value" style="font-size: 2em; font-weight: 500; color: var(--primary-blue); display: block;">3</span>
-        <span class="stat-label" style="font-size: 0.9em; color: var(--text-secondary-gray);">Badges Conquistados</span>
+    <div class="card stat-card p-lg">
+        <span class="stat-value" style="font-size: 2.2em; font-weight: 600; color: var(--primary-indigo); display: block;">3</span>
+        <span class="stat-label text-sm text-secondary">Badges Conquistados</span>
     </div>
 </div>
 
@@ -35,20 +35,20 @@
         <h3>Configurações da Conta</h3>
         <div class="card">
             <ul class="profile-menu" style="list-style: none; padding: 0; margin: 0;">
-                <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--bg-light-gray); cursor: pointer;">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">person_outline</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Informações Pessoais</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; border-bottom: 1px solid var(--neutral-gray-border); cursor: pointer;">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">person_outline</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Informações Pessoais</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
-                <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--bg-light-gray); cursor: pointer;">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">notifications_none</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Preferências de Notificação</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; border-bottom: 1px solid var(--neutral-gray-border); cursor: pointer;">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">notifications_none</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Preferências de Notificação</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
-                 <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; cursor: pointer;">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">security</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Segurança e Privacidade</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                 <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; cursor: pointer;">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">security</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Segurança e Privacidade</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
             </ul>
         </div>
@@ -57,33 +57,33 @@
         <h3>Minha Atividade</h3>
          <div class="card">
              <ul class="profile-menu" style="list-style: none; padding: 0; margin: 0;">
-                <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--bg-light-gray); cursor: pointer;" onclick="loadPage("rituals.html", "nav-rituals")">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">bookmark_border</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Meus Rituais Salvos</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; border-bottom: 1px solid var(--neutral-gray-border); cursor: pointer;" onclick="loadPage("rituals.html", "nav-rituals")">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">bookmark_border</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Meus Rituais Salvos</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
-                <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--bg-light-gray); cursor: pointer;" onclick="loadPage("simulations.html", "nav-simulations")">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">history</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Histórico de Simulações</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; border-bottom: 1px solid var(--neutral-gray-border); cursor: pointer;" onclick="loadPage("simulations.html", "nav-simulations")">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">history</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Histórico de Simulações</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
-                 <li class="menu-item" style="display: flex; align-items: center; padding: 12px 0; cursor: pointer;" onclick="loadPage("mentorship.html", "nav-mentorship")">
-                    <span class="material-icons" style="margin-right: 15px; color: var(--text-secondary-gray); width: 24px; text-align: center;">people_outline</span>
-                    <span style="flex-grow: 1; font-size: 1em;">Meus Mentores / Mentorados</span>
-                    <span class="material-icons chevron" style="color: var(--text-secondary-gray);">chevron_right</span>
+                 <li class="menu-item" style="display: flex; align-items: center; padding: var(--space-md) 0; cursor: pointer;" onclick="loadPage("mentorship.html", "nav-mentorship")">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--neutral-gray-text-secondary); width: 24px; text-align: center;">people_outline</span>
+                    <span style="flex-grow: 1; font-size: 1em;" class="font-semibold">Meus Mentores / Mentorados</span>
+                    <span class="material-icons chevron" style="color: var(--neutral-gray-text-secondary);">chevron_right</span>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 
-<div style="margin-top: 30px; border-top: 1px solid var(--border-gray); padding-top: 20px;">
+<div style="margin-top: var(--space-xl); border-top: 1px solid var(--neutral-gray-border); padding-top: var(--space-lg);">
      <button class="button button-danger">
-        <span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 5px;">logout</span>
+        <span class="material-icons">logout</span>
         Sair da Conta
     </button>
-    <button class="button button-outline" style="margin-left: 15px; border-color: var(--danger-red); color: var(--danger-red);">
-        <span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 5px;">delete_forever</span>
+    <button class="button button-secondary" style="margin-left: var(--space-md); border-color: var(--error-red); color: var(--error-red);">
+        <span class="material-icons">delete_forever</span>
         Excluir Conta
     </button>
 </div>

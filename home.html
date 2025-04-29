@@ -1,34 +1,34 @@
-<!-- home.html - Content for the Home Page -->
-<div class="welcome-section-content" style="background-color: var(--primary-blue); color: var(--white); padding: 20px; margin-bottom: 30px; border-radius: 8px;">
-    <h2>Bem-vindo(a) de volta, Lucas!</h2>
-    <p>Pronto para construir pontes hoje? Veja seus próximos passos e explore as funcionalidades.</p>
+<!-- home.html - Content for the Home Page (Updated Identity) -->
+<div class="welcome-section-content" style="background: linear-gradient(90deg, var(--primary-indigo), var(--complementary-purple)); color: var(--white); padding: var(--space-lg); margin-bottom: var(--space-xl); border-radius: var(--card-border-radius);">
+    <h2 style="color: var(--white); margin-bottom: var(--space-sm); border: none;">Bem-vindo(a) de volta, Lucas!</h2>
+    <p class="text-sm" style="opacity: 0.9;">Pronto para construir pontes hoje? Veja seus próximos passos e explore as funcionalidades.</p>
 </div>
 
 <h3>Acesso Rápido</h3>
-<div class="grid-container grid-cols-3" style="margin-bottom: 30px;">
+<div class="grid-container grid-cols-3 mb-xl">
     <div class="card access-card simulations" style="text-align: center; cursor: pointer;" onclick="loadPage("simulations.html", "nav-simulations")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: var(--accent-orange);">science</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Simulações</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: var(--interactive-blue);">science</span>
+        <span class="font-semibold" style="display: block;">Simulações</span>
     </div>
     <div class="card access-card mentoria" style="text-align: center; cursor: pointer;" onclick="loadPage("mentorship.html", "nav-mentorship")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: var(--secondary-teal);">groups</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Mentoria</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: var(--complementary-purple);">groups</span>
+        <span class="font-semibold" style="display: block;">Mentoria</span>
     </div>
     <div class="card access-card shadowing" style="text-align: center; cursor: pointer;" onclick="loadPage("shadowing.html", "nav-shadowing")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: var(--primary-blue);">visibility</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Shadowing</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: var(--success-green);">visibility</span>
+        <span class="font-semibold" style="display: block;">Shadowing</span>
     </div>
     <div class="card access-card rituais" style="text-align: center; cursor: pointer;" onclick="loadPage("rituals.html", "nav-rituals")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: #AB47BC;">checklist_rtl</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Rituais</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: var(--warning-yellow);">checklist_rtl</span>
+        <span class="font-semibold" style="display: block;">Rituais</span>
     </div>
     <div class="card access-card certificados" style="text-align: center; cursor: pointer;" onclick="loadPage("certification.html", "nav-certification")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: var(--gold-badge);">workspace_premium</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Certificados</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: #E6B422; /* Gold color from guide */">workspace_premium</span>
+        <span class="font-semibold" style="display: block;">Certificados</span>
     </div>
      <div class="card access-card profile" style="text-align: center; cursor: pointer;" onclick="loadPage("profile.html", "nav-profile")">
-        <span class="material-icons" style="font-size: 2.5em; margin-bottom: 8px; color: var(--text-secondary-gray);">person</span>
-        <span style="font-size: 1em; font-weight: 500; display: block;">Meu Perfil</span>
+        <span class="material-icons" style="font-size: 2.8em; margin-bottom: var(--space-sm); color: var(--neutral-gray-text-secondary);">person</span>
+        <span class="font-semibold" style="display: block;">Meu Perfil</span>
     </div>
 </div>
 
@@ -37,25 +37,25 @@
         <h3>Próximos Passos</h3>
         <div class="card">
             <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="display: flex; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray);">
-                    <span class="material-icons" style="margin-right: 12px; color: var(--primary-blue);">event</span>
+                <li style="display: flex; align-items: center; margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--neutral-gray-border);">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--interactive-blue);">event</span>
                     <div>
-                        <p style="margin: 0; font-size: 0.95em;">Sessão de Shadowing: Dia de um PM</p>
-                        <span style="font-size: 0.8em; color: var(--text-secondary-gray);">Hoje às 14:00 com Renata Oliveira</span>
+                        <p style="margin: 0; font-size: 1em;" class="font-semibold">Sessão de Shadowing: Dia de um PM</p>
+                        <span class="text-sm text-secondary">Hoje às 14:00 com Renata Oliveira</span>
                     </div>
                 </li>
-                <li style="display: flex; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray);">
-                    <span class="material-icons" style="margin-right: 12px; color: var(--primary-blue);">task</span>
+                <li style="display: flex; align-items: center; margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--neutral-gray-border);">
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--interactive-blue);">task</span>
                     <div>
-                        <p style="margin: 0; font-size: 0.95em;">Continuar Certificação: Produtividade Remota</p>
-                        <span style="font-size: 0.8em; color: var(--text-secondary-gray);">Progresso: 75%</span>
+                        <p style="margin: 0; font-size: 1em;" class="font-semibold">Continuar Certificação: Produtividade Remota</p>
+                        <span class="text-sm text-secondary">Progresso: 75%</span>
                     </div>
                 </li>
                  <li style="display: flex; align-items: center;">
-                    <span class="material-icons" style="margin-right: 12px; color: var(--primary-blue);">lightbulb</span>
+                    <span class="material-icons" style="margin-right: var(--space-md); color: var(--interactive-blue);">lightbulb</span>
                     <div>
-                        <p style="margin: 0; font-size: 0.95em;">Novo Ritual Sugerido: Técnica Pomodoro</p>
-                        <span style="font-size: 0.8em; color: var(--text-secondary-gray);">Explore na Biblioteca de Rituais</span>
+                        <p style="margin: 0; font-size: 1em;" class="font-semibold">Novo Ritual Sugerido: Técnica Pomodoro</p>
+                        <span class="text-sm text-secondary">Explore na Biblioteca de Rituais</span>
                     </div>
                 </li>
             </ul>
@@ -65,13 +65,19 @@
     <div>
         <h3>Destaques da Comunidade</h3>
         <div class="card">
-             <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray); font-size: 0.9em;">
-                <p style="margin: 0 0 5px 0;">🔥 Discussão popular: "Como lidar com a síndrome do impostor no trabalho remoto?"</p>
-                <a href="#" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;">Participar da conversa</a>
+             <div class="mb-md pb-md" style="border-bottom: 1px solid var(--neutral-gray-border);">
+                <p class="mb-sm">🔥 Discussão popular: "Como lidar com a síndrome do impostor no trabalho remoto?"</p>
+                <a href="#" class="button button-tertiary text-sm">
+                    <span class="material-icons">forum</span>
+                    Participar da conversa
+                </a>
             </div>
-             <div style="font-size: 0.9em;">
-                <p style="margin: 0 0 5px 0;">💡 Novo ritual compartilhado por João Silva: "Checklist diário para início e fim do expediente."</p>
-                <a href="#" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;" onclick="loadPage("rituals.html", "nav-rituals")">Ver ritual</a>
+             <div>
+                <p class="mb-sm">💡 Novo ritual compartilhado por João Silva: "Checklist diário para início e fim do expediente."</p>
+                <a href="#" class="button button-tertiary text-sm" onclick="loadPage("rituals.html", "nav-rituals")">
+                     <span class="material-icons">visibility</span>
+                    Ver ritual
+                </a>
             </div>
         </div>
     </div>

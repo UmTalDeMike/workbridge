@@ -1,67 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkBridge - Shadowing</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>WorkBridge</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="simulacoes.html">Simulações</a></li>
-                <li><a href="mentoria.html">Mentoria</a></li>
-                <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="shadowing.html">Shadowing</a></li>
-                <li><a href="rituais.html">Rituais</a></li>
-                <li><a href="perfis.html">Perfis</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- shadowing.html - Content for the Shadowing Virtual Page -->
+<h2>Programa de Shadowing Virtual</h2>
 
-    <main>
-        <h2>Programa de Shadowing Virtual</h2>
-        <p>Observe profissionais experientes em tempo real, acompanhe seu dia de trabalho remoto e aprenda com quem já trilhou o caminho.</p>
+<div class="controls-section" style="display: flex; gap: 10px; margin-bottom: 20px; align-items: center;">
+    <div class="search-bar" style="flex-grow: 1; border: 1px solid var(--border-gray); border-radius: 20px; padding: 8px 15px; display: flex; align-items: center;">
+        <span class="material-icons" style="margin-right: 8px; color: var(--text-secondary-gray);">search</span>
+        <input type="text" placeholder="Buscar sessões por mentor, área ou palavra-chave..." style="flex-grow: 1; border: none; outline: none; font-size: 1em; background: transparent;">
+    </div>
+    <button class="button button-secondary" style="white-space: nowrap;">
+        <span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 5px;">calendar_today</span>
+        Filtrar por Data
+    </button>
+</div>
 
-        <div class="shadowing-sessions">
-            <div class="card">
-                <img src="images/remote_work_man_laptop.webp" alt="Profissional em sessão de shadowing" class="card-image">
-                <h3>Sessão com Gerente de Produto</h3>
-                <p>Acompanhe um dia na vida de um Gerente de Produto, desde o planejamento até a colaboração com a equipe de desenvolvimento.</p>
-                <p><strong>Mentor:</strong> Renata Oliveira</p>
-                <p><strong>Data/Hora:</strong> 05/05/2025 - 10:00 às 12:00</p>
-                <button class="button-primary">Agendar Vaga</button>
+<div class="grid-container grid-cols-3">
+    <div class="card session-card">
+        <h3>Dia de um Product Manager</h3>
+        <div class="session-mentor" style="display: flex; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray);">
+            <div class="mentor-avatar-small" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-teal); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: 500; margin-right: 10px; flex-shrink: 0;">RO</div>
+            <div>
+                <span class="mentor-name" style="font-size: 1em; font-weight: 500; display: block;">Renata Oliveira</span>
+                <span class="mentor-title" style="font-size: 0.85em; color: var(--text-secondary-gray);">Product Manager | Fintech</span>
             </div>
-            <div class="card">
-                 <img src="images/remote_work_woman_outdoors.jpeg" alt="Desenvolvedora em sessão de shadowing" class="card-image">
-                <h3>Sessão com Desenvolvedora Full-Stack</h3>
-                <p>Veja como uma desenvolvedora experiente aborda desafios de codificação, participa de code reviews e colabora remotamente.</p>
-                 <p><strong>Mentor:</strong> Ana Silva</p>
-                 <p><strong>Data/Hora:</strong> 06/05/2025 - 14:00 às 16:00</p>
-                <button class="button-primary">Agendar Vaga</button>
+        </div>
+        <div class="session-details">
+            <p style="font-size: 0.9em; color: var(--text-secondary-gray); margin-bottom: 15px;">Acompanhe um dia típico na gestão de produtos digitais em uma fintech, desde reuniões de planejamento até análise de métricas.</p>
+            <div class="session-tags" style="margin-bottom: 15px;">
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Gestão de Produto</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Fintech</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Liderança</span>
             </div>
+        </div>
+        <button class="button button-accent" style="width: 100%;">Ver Horários Disponíveis</button>
+    </div>
+
+    <div class="card session-card">
+        <h3>Code Review e Pair Programming</h3>
+         <div class="session-mentor" style="display: flex; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray);">
+            <div class="mentor-avatar-small" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-teal); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: 500; margin-right: 10px; flex-shrink: 0;">JS</div>
+            <div>
+                <span class="mentor-name" style="font-size: 1em; font-weight: 500; display: block;">João Silva</span>
+                <span class="mentor-title" style="font-size: 0.85em; color: var(--text-secondary-gray);">Dev Full-Stack Sênior</span>
             </div>
-            
-        <section class="how-it-works">
-            <h3>Como Funciona?</h3>
-            <ol>
-                <li>Encontre sessões de shadowing disponíveis por área ou profissional.</li>
-                <li>Agende sua participação na sessão desejada.</li>
-                <li>Receba o link seguro para a transmissão da tela e ambiente de trabalho.</li>
-                <li>Observe, anote e faça perguntas em momentos designados.</li>
-                <li>Revise gravações de momentos-chave (com permissão).</li>
-            </ol>
-        </section>
+        </div>
+        <div class="session-details">
+            <p style="font-size: 0.9em; color: var(--text-secondary-gray); margin-bottom: 15px;">Observe sessões práticas de revisão de código e programação em par em um time ágil, focando em qualidade e colaboração.</p>
+             <div class="session-tags" style="margin-bottom: 15px;">
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Desenvolvimento</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Código Limpo</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Colaboração</span>
+            </div>
+        </div>
+        <button class="button button-accent" style="width: 100%;">Ver Horários Disponíveis</button>
+    </div>
 
-    </main>
+     <div class="card session-card">
+        <h3>Conduzindo Reuniões Híbridas</h3>
+         <div class="session-mentor" style="display: flex; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--bg-light-gray);">
+            <div class="mentor-avatar-small" style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--secondary-teal); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1em; font-weight: 500; margin-right: 10px; flex-shrink: 0;">CO</div>
+            <div>
+                <span class="mentor-name" style="font-size: 1em; font-weight: 500; display: block;">Carolina Oliveira</span>
+                <span class="mentor-title" style="font-size: 0.85em; color: var(--text-secondary-gray);">Líder de Design</span>
+            </div>
+        </div>
+        <div class="session-details">
+            <p style="font-size: 0.9em; color: var(--text-secondary-gray); margin-bottom: 15px;">Veja na prática como facilitar reuniões inclusivas com participantes remotos e presenciais, utilizando ferramentas e técnicas específicas.</p>
+             <div class="session-tags" style="margin-bottom: 15px;">
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Liderança</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Reuniões Híbridas</span>
+                <span style="display: inline-block; background-color: var(--bg-light-gray); color: var(--text-secondary-gray); font-size: 0.8em; padding: 3px 8px; border-radius: 10px; margin-right: 5px; margin-bottom: 5px;">Comunicação</span>
+            </div>
+        </div>
+        <button class="button button-accent" style="width: 100%;">Ver Horários Disponíveis</button>
+    </div>
+    <!-- Add more session cards -->
+</div>
 
-    <footer>
-        <p>&copy; 2025 WorkBridge. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>

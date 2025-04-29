@@ -87,42 +87,66 @@
             fetch(page)
                 .then(response => {
                     if (!response.ok) {
+                        // More specific error logging might help
+                        console.error(`Failed to fetch ${page}. Status: ${response.status} ${response.statusText}`);
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
                     return response.text();
                 })
                 .then(html => {
-                    document.getElementById('content-area').innerHTML = html;
-                    
-                    // Update header title (extract from h2 in loaded content if possible)
-                    const tempDiv = document.createElement('div');
+                    const contentArea = document.getElementById("content-area");
+                    const pageTitleElement = document.getElementById("page-title");
+
+                    // Create a temporary container to parse the fetched HTML
+                    const tempDiv = document.createElement("div");
                     tempDiv.innerHTML = html;
-                    const h2 = tempDiv.querySelector('h2');
-                    document.getElementById('page-title').textContent = h2 ? h2.textContent : 'WorkBridge';
-                    if (h2) h2.style.display = 'none'; // Hide h2 as it's now in the header
-                    document.getElementById('content-area').innerHTML = tempDiv.innerHTML; // Update content without the h2
+
+                    // Find the first H2 element to use as the page title
+                    const h2 = tempDiv.querySelector("h2");
+                    let pageTitle = "WorkBridge"; // Default title
+                    if (h2) {
+                        pageTitle = h2.textContent;
+                        // Remove the H2 from the temporary container so it"s not duplicated
+                        h2.remove();
+                    }
+
+                    // Update the main content area with the modified HTML (without the H2)
+                    contentArea.innerHTML = tempDiv.innerHTML;
+
+                    // Update the header title
+                    pageTitleElement.textContent = pageTitle;
 
                     // Update active nav item
-                    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-                    if (document.getElementById(navId)) {
-                        document.getElementById(navId).classList.add('active');
+                    document.querySelectorAll(".nav-item").forEach(item => item.classList.remove("active"));
+                    const activeNavItem = document.getElementById(navId);
+                    if (activeNavItem) {
+                        // Check if it"s a direct nav item or part of the profile link
+                        if (activeNavItem.classList.contains("nav-item")) {
+                            activeNavItem.classList.add("active");
+                        } else {
+                            // If it"s the profile link, maybe highlight it differently or ensure no main nav is active
+                            // For now, just don"t add "active" to the profile link itself in the sidebar footer
+                        }
+                    } else if (navId === "nav-profile") {
+                         // Special handling if profile is loaded but doesn"t have .nav-item class
+                         // Maybe add an active state to the profile link in the footer?
+                         // Or just ensure no main nav item is active.
                     }
+
+
                 })
                 .catch(error => {
-                    console.error('Error loading page:', error);
-                    document.getElementById('content-area').innerHTML = `<p style="color: red;">Erro ao carregar a página: ${page}. Verifique o console para detalhes.</p>`;
-                    // Ensure title reflects error or default
-                     document.getElementById('page-title').textContent = 'Erro';
-                     // Clear active state on error
-                     document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                    console.error("Error loading page:", page, error);
+                    document.getElementById("content-area").innerHTML = `<p style="color: red;">Erro ao carregar a página: ${page}. Verifique o console para detalhes.</p>`;
+                    document.getElementById("page-title").textContent = "Erro";
+                    document.querySelectorAll(".nav-item").forEach(item => item.classList.remove("active"));
                 });
         }
 
         // Load initial page (Home)
-        document.addEventListener('DOMContentLoaded', () => {
-            loadPage('home.html', 'nav-home');
+        document.addEventListener("DOMContentLoaded", () => {
+            loadPage("home.html", "nav-home");
         });
     </script>
 </body>
 </html>
-

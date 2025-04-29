@@ -3,109 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkBridge - Início</title>
-    <link rel="stylesheet" href="styles_home.css">
+    <title>WorkBridge - Desktop</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="mobile-container">
-        <div class="welcome-section">
-            <h1>Bem-vindo(a) de volta, Lucas!</h1>
-            <p>Pronto para construir pontes hoje?</p>
-        </div>
-
-        <div class="content-area">
-            <h2>Acesso Rápido</h2>
-            <div class="quick-access-grid">
-                <div class="access-card simulations">
+    <aside class="sidebar">
+        <div class="logo">Work<span>Bridge</span></div>
+        <ul class="nav-menu">
+            <li class="nav-item active" id="nav-home">
+                <a href="#" onclick="loadPage('home.html', 'nav-home')">
+                    <span class="material-icons">home</span>
+                    Início
+                </a>
+            </li>
+            <li class="nav-item" id="nav-simulations">
+                <a href="#" onclick="loadPage('simulations.html', 'nav-simulations')">
                     <span class="material-icons">science</span>
-                    <span>Simulações</span>
-                </div>
-                <div class="access-card mentoria">
+                    Simulações
+                </a>
+            </li>
+            <li class="nav-item" id="nav-mentorship">
+                <a href="#" onclick="loadPage('mentorship.html', 'nav-mentorship')">
                     <span class="material-icons">groups</span>
-                    <span>Mentoria</span>
-                </div>
-                <div class="access-card shadowing">
-                    <span class="material-icons">visibility</span> <!-- Icon for Shadowing -->
-                    <span>Shadowing</span>
-                </div>
-                <div class="access-card rituais">
-                    <span class="material-icons">checklist_rtl</span> <!-- Icon for Rituals -->
-                    <span>Rituais</span>
-                </div>
-                 <div class="access-card certificados">
+                    Mentoria
+                </a>
+            </li>
+            <li class="nav-item" id="nav-certification">
+                <a href="#" onclick="loadPage('certification.html', 'nav-certification')">
                     <span class="material-icons">workspace_premium</span>
-                    <span>Certificados</span>
-                </div>
-                 <div class="access-card">
-                    <span class="material-icons">add_circle_outline</span>
-                    <span>Ver Mais</span>
-                </div>
-            </div>
-
-            <h2>Próximos Passos</h2>
-            <ul class="upcoming-list">
-                <li class="upcoming-item">
-                    <span class="material-icons">event</span>
-                    <div class="upcoming-info">
-                        <p>Sessão de Shadowing: Dia de um PM</p>
-                        <span>Hoje às 14:00 com Renata Oliveira</span>
-                    </div>
-                </li>
-                <li class="upcoming-item">
-                    <span class="material-icons">task</span>
-                    <div class="upcoming-info">
-                        <p>Continuar Certificação: Produtividade Remota</p>
-                        <span>Progresso: 75%</span>
-                    </div>
-                </li>
-                 <li class="upcoming-item">
-                    <span class="material-icons">lightbulb</span>
-                    <div class="upcoming-info">
-                        <p>Novo Ritual Sugerido: Técnica Pomodoro</p>
-                        <span>Explore na Biblioteca de Rituais</span>
-                    </div>
-                </li>
-                <!-- Add more upcoming items -->
-            </ul>
-
-            <h2>Destaques da Comunidade</h2>
-            <div class="community-highlight">
-                <p>🔥 Discussão popular: "Como lidar com a síndrome do impostor no trabalho remoto?"</p>
-                <a href="#">Participar da conversa</a>
-            </div>
-             <div class="community-highlight">
-                <p>💡 Novo ritual compartilhado por João Silva: "Checklist diário para início e fim do expediente."</p>
-                <a href="#">Ver ritual</a>
-            </div>
-            <!-- Add more highlights -->
-
-        </div>
-
-        <!-- Bottom Navigation -->
-        <nav class="bottom-nav">
-            <div class="nav-item active">
-                <span class="material-icons">home</span>
-                Início
-            </div>
-            <div class="nav-item">
-                <span class="material-icons">science</span>
-                Simulações
-            </div>
-            <div class="nav-item">
-                <span class="material-icons">groups</span>
-                Mentoria
-            </div>
-            <div class="nav-item">
-                <span class="material-icons">workspace_premium</span>
-                Certificados
-            </div>
-             <div class="nav-item">
+                    Certificados
+                </a>
+            </li>
+            <li class="nav-item" id="nav-shadowing">
+                <a href="#" onclick="loadPage('shadowing.html', 'nav-shadowing')">
+                    <span class="material-icons">visibility</span>
+                    Shadowing
+                </a>
+            </li>
+            <li class="nav-item" id="nav-rituals">
+                <a href="#" onclick="loadPage('rituals.html', 'nav-rituals')">
+                    <span class="material-icons">checklist_rtl</span>
+                    Rituais
+                </a>
+            </li>
+            <!-- Add other main sections here -->
+        </ul>
+        <div class="sidebar-footer">
+             <a href="#" onclick="loadPage('profile.html', 'nav-profile')" id="nav-profile">
                 <span class="material-icons">person</span>
-                Perfil
+                Meu Perfil
+            </a>
+             <a href="#" style="margin-top: 15px; color: var(--danger-red);">
+                <span class="material-icons">logout</span>
+                Sair
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <div class="header-title" id="page-title">Início</div>
+            <div class="header-actions">
+                <div class="search-bar-header">
+                    <span class="material-icons">search</span>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="user-profile-header" onclick="loadPage('profile.html', 'nav-profile')">
+                    <div class="user-avatar-header">LM</div>
+                    <span class="user-name-header">Lucas Martins</span>
+                </div>
             </div>
-        </nav>
-    </div>
+        </header>
+        <section class="page-content" id="content-area">
+            <!-- Content will be loaded here by JavaScript -->
+            <p>Carregando conteúdo...</p>
+        </section>
+    </main>
+
+    <script>
+        // Simple SPA-like navigation using fetch
+        function loadPage(page, navId) {
+            fetch(page)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById('content-area').innerHTML = html;
+                    
+                    // Update header title (extract from h2 in loaded content if possible)
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = html;
+                    const h2 = tempDiv.querySelector('h2');
+                    document.getElementById('page-title').textContent = h2 ? h2.textContent : 'WorkBridge';
+                    if (h2) h2.style.display = 'none'; // Hide h2 as it's now in the header
+                    document.getElementById('content-area').innerHTML = tempDiv.innerHTML; // Update content without the h2
+
+                    // Update active nav item
+                    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                    if (document.getElementById(navId)) {
+                        document.getElementById(navId).classList.add('active');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading page:', error);
+                    document.getElementById('content-area').innerHTML = `<p style="color: red;">Erro ao carregar a página: ${page}. Verifique o console para detalhes.</p>`;
+                    // Ensure title reflects error or default
+                     document.getElementById('page-title').textContent = 'Erro';
+                     // Clear active state on error
+                     document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                });
+        }
+
+        // Load initial page (Home)
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPage('home.html', 'nav-home');
+        });
+    </script>
 </body>
 </html>
 

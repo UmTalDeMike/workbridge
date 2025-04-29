@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --indigo-profundo: #4338CA;
+    --roxo-proativo: #8B5CF6;
+    --branco: #FFFFFF;
+    --azul-conectivo: #3B82F6;
+    --verde-crescimento: #10B981;
+    --cinza-neutro: #F3F4F6;
+    --amarelo-alerta: #FBBF24;
+    --vermelho-erro: #EF4444;
+    --preto-texto: #111827;
+
+    --font-principal: 'Inter', sans-serif;
+
+    --spacing-micro: 4px;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --spacing-xxxl: 64px;
+
+    --border-radius-button: 8px;
+    --border-radius-card: 12px;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--preto-texto);
+    background-color: var(--branco);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--indigo-profundo);
+    color: var(--branco);
+    padding: var(--spacing-medium) var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700; /* Inter Bold */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: var(--spacing-large);
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 400; /* Inter Regular */
+    padding: var(--spacing-small) 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom-color: var(--branco);
+    font-weight: 600; /* Inter SemiBold for active/hover */
+}
+
+main {
+    flex-grow: 1;
+    padding: var(--spacing-xl) var(--spacing-xxl);
+}
+
+main h2 {
+    font-weight: 700; /* Inter Bold */
+    color: var(--indigo-profundo);
+    margin-bottom: var(--spacing-large);
+}
+
+main p {
+    font-weight: 400; /* Inter Regular */
+    line-height: 1.6;
+}
+
+footer {
+    background-color: var(--cinza-neutro);
+    color: var(--preto-texto);
+    text-align: center;
+    padding: var(--spacing-medium) var(--spacing-xl);
+    margin-top: var(--spacing-xxl);
+    font-weight: 300; /* Inter Light */
+}
+
+/* Placeholder for future button styles */
+.button-primary {
+    background-color: var(--indigo-profundo);
+    color: var(--branco);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: var(--border-radius-button);
+    cursor: pointer;
+    font-weight: 600; /* Inter SemiBold */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #3730A3; /* Darker shade of indigo */
+}
+
+/* Placeholder for future card styles */
+.card {
+    background-color: var(--branco);
+    border-radius: var(--border-radius-card);
+    padding: var(--spacing-large);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-large);
+}
+
